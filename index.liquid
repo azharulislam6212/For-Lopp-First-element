@@ -1,0 +1,11 @@
+  {% for product in collection.products %}
+        {% if forloop.first %}
+            Hello World!
+        {% endif %}
+    {% endfor %}
+
+{% for product in collection.products %}
+   {% if forloop.index == 1 %}
+        Hello World!
+   {% endif %}
+{% endfor %}
